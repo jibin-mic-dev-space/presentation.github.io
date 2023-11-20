@@ -1,0 +1,128 @@
+.clearfix{
+    &:after{
+        content: "";
+        display: block;
+        clear: both;
+        visibility: hidden;
+    }
+}
+a{
+  &:focus{
+    outline: none !important;
+  }
+}
+
+.font-action-slider{
+  height: 3px;
+  background-color: #000;
+  border: none !important;
+  border-left: 12px solid #000 !important;
+  .ui-slider-handle{
+    width: 12px;
+    height: 12px;
+    background: #424242;
+    border: none !important;
+    border-radius: 0px;
+    margin-left: -12px !important;
+    &.ui-state-active,&.ui-state-focus, &.ui-state-hover{
+      background: #424242 !important;
+      border: none !important;
+      border-radius: 0px !important;
+      outline: none !important;
+    }
+  }
+}
+
+.nested-swiper-container{
+  .swiper-slide{
+    z-index: 0;
+    opacity: 1 !important;
+    p{
+      color: rgba(29, 29, 31, 0.2);
+    }
+  }
+  .swiper-slide-active{
+    z-index: 1;
+    p{
+      color: #1D1D1F;
+    }
+  }
+}
+
+// .font-toggle-items{
+//   // h2{
+//   //   font-family: 'Inter', sans-serif;
+//   // }
+//   .inbox-outfit{
+//     display: none;
+//   }
+//   &.font-toggle-3-outfit{
+//     // h2{
+//     //   font-family: 'Outfit', sans-serif;
+//     // }
+//     .inbox-inter{
+//       display: none;
+//     }
+//     .inbox-outfit{
+//       display: block;
+//     }
+//   }
+// }
+.switch-font{
+  &.active-font-mac{
+    .font-slider-selection{
+      left: 10px;
+    }
+  }
+  &.active-font-windows{
+    .font-slider-selection{
+      left: 94px;
+    }
+  }
+  &.active-font-linux{
+    .font-slider-selection{
+      left: 178px;
+    }
+  }
+  &.active-font-android{
+    .font-slider-selection{
+      left: 262px;
+    }
+  }
+}
+
+.switch-spf{
+  &.active-pf-Intercom{
+    .font-slider-selection{
+      left: 10px;
+    }
+  }
+  &.active-pf-LinkedIn{
+    .font-slider-selection{
+      left: 94px;
+    }
+  }
+  &.active-pf-Atlassian{
+    .font-slider-selection{
+      left: 178px;
+    }
+  }
+  &.active-pf-Youtrack{
+    .font-slider-selection{
+      left: 262px;
+    }
+  }
+  &.active-pf-Github{
+    .font-slider-selection{
+      left: 346px;
+    }
+  }
+}
+.sysfont-prof,.pf-img{
+  display: none;
+}
+
+.bottom-toolbar{
+  height: 116px;
+  display: none;
+}
